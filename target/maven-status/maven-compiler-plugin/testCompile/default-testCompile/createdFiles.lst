@@ -1,0 +1,6 @@
+LoginTest.class
+RegisterTest.class
+RegisterNegativeTest.class
+AccountTest.class
+BaseTest.class
+ConstructorTest.class
