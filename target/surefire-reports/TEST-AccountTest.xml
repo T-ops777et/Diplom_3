@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="AccountTest" time="37.003" tests="4" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="C:\Users\User\Desktop\Новая папка\Diplom_3\target\test-classes;C:\Users\User\Desktop\Новая папка\Diplom_3\target\classes;C:\Users\User\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\User\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\User\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\User\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\User\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\User\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\User\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\User\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\User\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\User\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\User\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\User\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\User\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\User\.m2\repository\io\qameta\allure\allure-junit4\2.27.0\allure-junit4-2.27.0.jar;C:\Users\User\.m2\repository\io\qameta\allure\allure-java-commons\2.27.0\allure-java-commons-2.27.0.jar;C:\Users\User\.m2\repository\io\qameta\allure\allure-model\2.27.0\allure-model-2.27.0.jar;C:\Users\User\.m2\repository\io\qameta\allure\allure-test-filter\2.27.0\allure-test-filter-2.27.0.jar;C:\Users\User\.m2\repository\io\qameta\allure\allure-rest-assured\2.27.0\allure-rest-assured-2.27.0.jar;C:\Users\User\.m2\repository\io\qameta\allure\allure-attachments\2.27.0\allure-attachments-2.27.0.jar;C:\Users\User\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\User\.m2\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar;C:\Users\User\.m2\repository\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;C:\Users\User\.m2\repository\com\google\code\gson\gson\2.8.9\gson-2.8.9.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-api\4.21.0\selenium-api-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.21.0\selenium-chrome-driver-4.21.0.jar;C:\Users\User\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.21.0\selenium-chromium-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-json\4.21.0\selenium-json-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.21.0\selenium-manager-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.21.0\selenium-devtools-v85-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.21.0\selenium-edge-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.21.0\selenium-firefox-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-http\4.21.0\selenium-http-4.21.0.jar;C:\Users\User\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.21.0\selenium-ie-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.21.0\selenium-remote-driver-4.21.0.jar;C:\Users\User\.m2\repository\com\google\guava\guava\33.2.0-jre\guava-33.2.0-jre.jar;C:\Users\User\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\User\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\User\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\User\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\User\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\User\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-api\1.38.0\opentelemetry-api-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-context\1.38.0\opentelemetry-context-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.38.0\opentelemetry-exporter-logging-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.38.0\opentelemetry-sdk-common-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.38.0\opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.38.0\opentelemetry-sdk-extension-autoconfigure-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.38.0-alpha\opentelemetry-api-incubator-1.38.0-alpha.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.38.0\opentelemetry-sdk-trace-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.38.0\opentelemetry-sdk-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.38.0\opentelemetry-sdk-metrics-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.38.0\opentelemetry-sdk-logs-1.38.0.jar;C:\Users\User\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-os\4.21.0\selenium-os-4.21.0.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.21.0\selenium-safari-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-support\4.21.0\selenium-support-4.21.0.jar;C:\Users\User\.m2\repository\io\github\bonigarcia\webdrivermanager\5.8.0\webdrivermanager-5.8.0.jar;C:\Users\User\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\User\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\User\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\User\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\User\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\User\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\User\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-compress\1.26.1\commons-compress-1.26.1.jar;C:\Users\User\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\User\.m2\repository\org\slf4j\slf4j-nop\2.0.12\slf4j-nop-2.0.12.jar;"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.24_8\bin"/>
+    <property name="sun.java.command" value="C:\Temp\surefire4556202636935035655\surefirebooter-20241006174423073_3.jar C:\Temp\surefire4556202636935035655 2024-10-06T17-44-22_543-jvmRun1 surefire-20241006174423073_1tmp surefire_0-20241006174423073_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\User\Desktop\Новая папка\Diplom_3\target\test-classes;C:\Users\User\Desktop\Новая папка\Diplom_3\target\classes;C:\Users\User\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\User\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\User\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\User\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\User\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\User\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\User\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\User\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\User\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\User\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\User\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\User\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\User\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\User\.m2\repository\io\qameta\allure\allure-junit4\2.27.0\allure-junit4-2.27.0.jar;C:\Users\User\.m2\repository\io\qameta\allure\allure-java-commons\2.27.0\allure-java-commons-2.27.0.jar;C:\Users\User\.m2\repository\io\qameta\allure\allure-model\2.27.0\allure-model-2.27.0.jar;C:\Users\User\.m2\repository\io\qameta\allure\allure-test-filter\2.27.0\allure-test-filter-2.27.0.jar;C:\Users\User\.m2\repository\io\qameta\allure\allure-rest-assured\2.27.0\allure-rest-assured-2.27.0.jar;C:\Users\User\.m2\repository\io\qameta\allure\allure-attachments\2.27.0\allure-attachments-2.27.0.jar;C:\Users\User\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\User\.m2\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar;C:\Users\User\.m2\repository\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;C:\Users\User\.m2\repository\com\google\code\gson\gson\2.8.9\gson-2.8.9.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-api\4.21.0\selenium-api-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.21.0\selenium-chrome-driver-4.21.0.jar;C:\Users\User\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.21.0\selenium-chromium-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-json\4.21.0\selenium-json-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.21.0\selenium-manager-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.21.0\selenium-devtools-v85-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.21.0\selenium-edge-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.21.0\selenium-firefox-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-http\4.21.0\selenium-http-4.21.0.jar;C:\Users\User\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.21.0\selenium-ie-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.21.0\selenium-remote-driver-4.21.0.jar;C:\Users\User\.m2\repository\com\google\guava\guava\33.2.0-jre\guava-33.2.0-jre.jar;C:\Users\User\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\User\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\User\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\User\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\User\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\User\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-api\1.38.0\opentelemetry-api-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-context\1.38.0\opentelemetry-context-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.38.0\opentelemetry-exporter-logging-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.38.0\opentelemetry-sdk-common-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.38.0\opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.38.0\opentelemetry-sdk-extension-autoconfigure-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.38.0-alpha\opentelemetry-api-incubator-1.38.0-alpha.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.38.0\opentelemetry-sdk-trace-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.38.0\opentelemetry-sdk-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.38.0\opentelemetry-sdk-metrics-1.38.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.38.0\opentelemetry-sdk-logs-1.38.0.jar;C:\Users\User\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-os\4.21.0\selenium-os-4.21.0.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.21.0\selenium-safari-driver-4.21.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-support\4.21.0\selenium-support-4.21.0.jar;C:\Users\User\.m2\repository\io\github\bonigarcia\webdrivermanager\5.8.0\webdrivermanager-5.8.0.jar;C:\Users\User\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\User\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\User\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\User\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\User\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\User\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\User\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\User\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-compress\1.26.1\commons-compress-1.26.1.jar;C:\Users\User\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\User\.m2\repository\org\slf4j\slf4j-nop\2.0.12\slf4j-nop-2.0.12.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="allure.results.directory" value="C:\Users\User\Desktop\Новая папка\Diplom_3\target/allure-results"/>
+    <property name="user.home" value="C:\Users\User"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Amazon Corretto\jdk11.0.24_8"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\User\Desktop\Новая папка\Diplom_3"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Temp\surefire4556202636935035655\surefirebooter-20241006174423073_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.24+8-LTS"/>
+    <property name="user.name" value="User"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-11.0.24.8.1"/>
+    <property name="localRepository" value="C:\Users\User\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
+    <property name="java.io.tmpdir" value="C:\Temp\"/>
+    <property name="idea.version" value="2024.2"/>
+    <property name="java.version" value="11.0.24"/>
+    <property name="user.dir" value="C:\Users\User\Desktop\Новая папка\Diplom_3"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.24_8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\apache-maven-3.9.8\bin;C:\allure-commandline-2.9.0\allure-2.9.0\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\WebDriver\bin;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="11.0.24+8-LTS"/>
+    <property name="java.specification.maintenance.version" value="2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="clickOnTheButtonConstructorOn" classname="AccountTest" time="16.057">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "GChbdTZUtr@yandex.ru",
+    "password": "gNRwlP",
+    "name": "quWEny",
+    "accessToken": null,
+    "refreshToken": null
+}
+HTTP/1.1 200 OK
+Date: Sun, 06 Oct 2024 14:42:41 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWUxOWVkMjgwMDAxYjRkNmRlOCIsImlhdCI6MTcyODIyNTc2MSwiZXhwIjoxNzI4MjI2OTYxfQ.8GN4-f0q8UL-ioo6_KTU66qwHG15dX5tOiYfUJ9NYp4
+ETag: W/"16d-fm+gwsVRzLzFLk3+2Cooy9J//PU"
+cf-cache-status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=on5NFK1iVfUIV4NP%2BHq5kBhr7PECLFMcHbWtCLhbz%2BbFibH774qogHhyOA2TUWGBqnZb6NxjHAvKQFTlP8nIAgphKoWJvVRok%2Bqq8Mr4xSJwybCiLvW5IOUWRlQDkOZdF5ROn%2Fd4IfrcUARSziqwYp%2FiGEA%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ce66b619ab86eb4-CDG
+Content-Encoding: gzip
+
+{
+    "success": true,
+    "user": {
+        "email": "gchbdtzutr@yandex.ru",
+        "name": "quWEny"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWUxOWVkMjgwMDAxYjRkNmRlOCIsImlhdCI6MTcyODIyNTc2MSwiZXhwIjoxNzI4MjI2OTYxfQ.8GN4-f0q8UL-ioo6_KTU66qwHG15dX5tOiYfUJ9NYp4",
+    "refreshToken": "635897f645078d4e3f4d147bbbf3eb4decb80b9e51f3d534e3cd6c46aab4786f3bafbd3a3384bf40"
+}
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWUxOWVkMjgwMDAxYjRkNmRlOCIsImlhdCI6MTcyODIyNTc2MSwiZXhwIjoxNzI4MjI2OTYxfQ.8GN4-f0q8UL-ioo6_KTU66qwHG15dX5tOiYfUJ9NYp4
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 202 Accepted
+Date: Sun, 06 Oct 2024 14:42:44 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=qqVTVTqt5JXdLjiSn3QLhFw3x1DfeP9OKJS%2BeEBjYU4OV4qpkQK3zdiiRobPR40NTHTr1XW49X%2FH1jzpispyiFB6telTubVmA7cn7tExID2HUD2oMKiz%2B5vMB2g9Tms2jBFs8BHKSPr3dWxcwRZo1tPv7sg%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ce66b722aded71a-CDG
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+]]></system-out>
+    <system-err><![CDATA[окт. 06, 2024 5:44:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 129, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 129
+]]></system-err>
+  </testcase>
+  <testcase name="clickOnExitButton" classname="AccountTest" time="7.161">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "blnrpPkBSR@yandex.ru",
+    "password": "IZlyMM",
+    "name": "jQSfNu",
+    "accessToken": null,
+    "refreshToken": null
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "blnrpPkBSR@yandex.ru",
+    "password": "IZlyMM",
+    "name": "jQSfNu",
+    "accessToken": null,
+    "refreshToken": null
+}
+HTTP/1.1 200 OK
+Date: Sun, 06 Oct 2024 14:42:48 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWU4OWVkMjgwMDAxYjRkNmRlYiIsImlhdCI6MTcyODIyNTc2OCwiZXhwIjoxNzI4MjI2OTY4fQ.5m1B6IwrKhFRyI_-0zf4gVa_eaVXQve-PuJ6nsBhZXs
+ETag: W/"16d-SJSmUaeHZ1NuGneQ6GrN6kxAhhU"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Qn%2BpidOov1UAejcw7B85fjE3jieUG9rgSRLC9gJlUW6CEUZ7BN4CfE2da9eAIPnYk3PtaYZG10WwuTvh0ixIjfxGhdQDSZBc%2BnVJkj7JDKoyOtyJnJ4YBiu222Orh2iBU7Wpb0bRVhRNkWNOwl3HVj1jo00%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ce66b8b8800b04b-ATL
+Content-Encoding: gzip
+
+{
+    "success": true,
+    "user": {
+        "email": "blnrppkbsr@yandex.ru",
+        "name": "jQSfNu"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWU4OWVkMjgwMDAxYjRkNmRlYiIsImlhdCI6MTcyODIyNTc2OCwiZXhwIjoxNzI4MjI2OTY4fQ.5m1B6IwrKhFRyI_-0zf4gVa_eaVXQve-PuJ6nsBhZXs",
+    "refreshToken": "14eb110570cfddb088aa6892fd5e1bc52ee2d4d332066d7494ab59ab29a575f8a7689a5e9930b363"
+}
+HTTP/1.1 200 OK
+Date: Sun, 06 Oct 2024 14:42:48 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWU4OWVkMjgwMDAxYjRkNmRlYiIsImlhdCI6MTcyODIyNTc2OCwiZXhwIjoxNzI4MjI2OTY4fQ.5m1B6IwrKhFRyI_-0zf4gVa_eaVXQve-PuJ6nsBhZXs
+ETag: W/"16d-SJSmUaeHZ1NuGneQ6GrN6kxAhhU"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Qn%2BpidOov1UAejcw7B85fjE3jieUG9rgSRLC9gJlUW6CEUZ7BN4CfE2da9eAIPnYk3PtaYZG10WwuTvh0ixIjfxGhdQDSZBc%2BnVJkj7JDKoyOtyJnJ4YBiu222Orh2iBU7Wpb0bRVhRNkWNOwl3HVj1jo00%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ce66b8b8800b04b-ATL
+Content-Encoding: gzip
+
+{
+    "success": true,
+    "user": {
+        "email": "blnrppkbsr@yandex.ru",
+        "name": "jQSfNu"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWU4OWVkMjgwMDAxYjRkNmRlYiIsImlhdCI6MTcyODIyNTc2OCwiZXhwIjoxNzI4MjI2OTY4fQ.5m1B6IwrKhFRyI_-0zf4gVa_eaVXQve-PuJ6nsBhZXs",
+    "refreshToken": "14eb110570cfddb088aa6892fd5e1bc52ee2d4d332066d7494ab59ab29a575f8a7689a5e9930b363"
+}
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWU4OWVkMjgwMDAxYjRkNmRlYiIsImlhdCI6MTcyODIyNTc2OCwiZXhwIjoxNzI4MjI2OTY4fQ.5m1B6IwrKhFRyI_-0zf4gVa_eaVXQve-PuJ6nsBhZXs
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWU4OWVkMjgwMDAxYjRkNmRlYiIsImlhdCI6MTcyODIyNTc2OCwiZXhwIjoxNzI4MjI2OTY4fQ.5m1B6IwrKhFRyI_-0zf4gVa_eaVXQve-PuJ6nsBhZXs
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 202 Accepted
+Date: Sun, 06 Oct 2024 14:42:52 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+cf-cache-status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Gemvy3Jnm818GFkTa3tjzW5JX2TZWHgak9cD2HyDTrTr0NO%2BAoHDPLtnPlX20fr7BARb6TXUcORE0HF0JqBZz0oF6idwdSsZx9SOuaLOtvaKTm0881yzOfhiPDZNkpycPzrZvjrsWLS7cjYSv1Zy7xdzKkE%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ce66ba08c6e36c0-YYZ
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+HTTP/1.1 202 Accepted
+Date: Sun, 06 Oct 2024 14:42:52 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+cf-cache-status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Gemvy3Jnm818GFkTa3tjzW5JX2TZWHgak9cD2HyDTrTr0NO%2BAoHDPLtnPlX20fr7BARb6TXUcORE0HF0JqBZz0oF6idwdSsZx9SOuaLOtvaKTm0881yzOfhiPDZNkpycPzrZvjrsWLS7cjYSv1Zy7xdzKkE%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ce66ba08c6e36c0-YYZ
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+]]></system-out>
+    <system-err><![CDATA[окт. 06, 2024 5:44:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 129, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 129
+]]></system-err>
+  </testcase>
+  <testcase name="clickOnTheButtonLogotype" classname="AccountTest" time="6.642">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "XOFVxPDtYg@yandex.ru",
+    "password": "yKzhPS",
+    "name": "hJeBLn",
+    "accessToken": null,
+    "refreshToken": null
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "XOFVxPDtYg@yandex.ru",
+    "password": "yKzhPS",
+    "name": "hJeBLn",
+    "accessToken": null,
+    "refreshToken": null
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "XOFVxPDtYg@yandex.ru",
+    "password": "yKzhPS",
+    "name": "hJeBLn",
+    "accessToken": null,
+    "refreshToken": null
+}
+HTTP/1.1 200 OK
+Date: Sun, 06 Oct 2024 14:42:56 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWYwOWVkMjgwMDAxYjRkNmRlZSIsImlhdCI6MTcyODIyNTc3NiwiZXhwIjoxNzI4MjI2OTc2fQ.hnlaFqTa6fghXK-r04TvJ6H8S1CoGtOeiSjEWmFwLWg
+ETag: W/"16d-rsQeZIqwLH45Z1Rj+skuQZv0wOU"
+cf-cache-status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Jelez3C84PP6P5MNsy5UEHAgtZj%2FFY8%2BZVrHrPDMAP5G2U%2FUyjtNK1IPLRFHMwjyHHqFRc8ONdJ%2FI7q%2Bszq8r7cHLGc74pKXSck3i1mTvWj66zzaNu3uRNrR3fhaI%2FZ4D8GcS1LPM9RO4te5P%2BbuvVDhu2w%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ce66bbbba34d68e-CDG
+Content-Encoding: gzip
+
+{
+    "success": true,
+    "user": {
+        "email": "xofvxpdtyg@yandex.ru",
+        "name": "hJeBLn"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWYwOWVkMjgwMDAxYjRkNmRlZSIsImlhdCI6MTcyODIyNTc3NiwiZXhwIjoxNzI4MjI2OTc2fQ.hnlaFqTa6fghXK-r04TvJ6H8S1CoGtOeiSjEWmFwLWg",
+    "refreshToken": "f96c8dd22bc81f928228645c859e87f0a0df9434eeb43a21b0f395ae02115ddbcebc3a1811c5facc"
+}
+HTTP/1.1 200 OK
+Date: Sun, 06 Oct 2024 14:42:56 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWYwOWVkMjgwMDAxYjRkNmRlZSIsImlhdCI6MTcyODIyNTc3NiwiZXhwIjoxNzI4MjI2OTc2fQ.hnlaFqTa6fghXK-r04TvJ6H8S1CoGtOeiSjEWmFwLWg
+ETag: W/"16d-rsQeZIqwLH45Z1Rj+skuQZv0wOU"
+cf-cache-status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Jelez3C84PP6P5MNsy5UEHAgtZj%2FFY8%2BZVrHrPDMAP5G2U%2FUyjtNK1IPLRFHMwjyHHqFRc8ONdJ%2FI7q%2Bszq8r7cHLGc74pKXSck3i1mTvWj66zzaNu3uRNrR3fhaI%2FZ4D8GcS1LPM9RO4te5P%2BbuvVDhu2w%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ce66bbbba34d68e-CDG
+Content-Encoding: gzip
+
+{
+    "success": true,
+    "user": {
+        "email": "xofvxpdtyg@yandex.ru",
+        "name": "hJeBLn"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWYwOWVkMjgwMDAxYjRkNmRlZSIsImlhdCI6MTcyODIyNTc3NiwiZXhwIjoxNzI4MjI2OTc2fQ.hnlaFqTa6fghXK-r04TvJ6H8S1CoGtOeiSjEWmFwLWg",
+    "refreshToken": "f96c8dd22bc81f928228645c859e87f0a0df9434eeb43a21b0f395ae02115ddbcebc3a1811c5facc"
+}
+HTTP/1.1 200 OK
+Date: Sun, 06 Oct 2024 14:42:56 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWYwOWVkMjgwMDAxYjRkNmRlZSIsImlhdCI6MTcyODIyNTc3NiwiZXhwIjoxNzI4MjI2OTc2fQ.hnlaFqTa6fghXK-r04TvJ6H8S1CoGtOeiSjEWmFwLWg
+ETag: W/"16d-rsQeZIqwLH45Z1Rj+skuQZv0wOU"
+cf-cache-status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Jelez3C84PP6P5MNsy5UEHAgtZj%2FFY8%2BZVrHrPDMAP5G2U%2FUyjtNK1IPLRFHMwjyHHqFRc8ONdJ%2FI7q%2Bszq8r7cHLGc74pKXSck3i1mTvWj66zzaNu3uRNrR3fhaI%2FZ4D8GcS1LPM9RO4te5P%2BbuvVDhu2w%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ce66bbbba34d68e-CDG
+Content-Encoding: gzip
+
+{
+    "success": true,
+    "user": {
+        "email": "xofvxpdtyg@yandex.ru",
+        "name": "hJeBLn"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWYwOWVkMjgwMDAxYjRkNmRlZSIsImlhdCI6MTcyODIyNTc3NiwiZXhwIjoxNzI4MjI2OTc2fQ.hnlaFqTa6fghXK-r04TvJ6H8S1CoGtOeiSjEWmFwLWg",
+    "refreshToken": "f96c8dd22bc81f928228645c859e87f0a0df9434eeb43a21b0f395ae02115ddbcebc3a1811c5facc"
+}
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWYwOWVkMjgwMDAxYjRkNmRlZSIsImlhdCI6MTcyODIyNTc3NiwiZXhwIjoxNzI4MjI2OTc2fQ.hnlaFqTa6fghXK-r04TvJ6H8S1CoGtOeiSjEWmFwLWg
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWYwOWVkMjgwMDAxYjRkNmRlZSIsImlhdCI6MTcyODIyNTc3NiwiZXhwIjoxNzI4MjI2OTc2fQ.hnlaFqTa6fghXK-r04TvJ6H8S1CoGtOeiSjEWmFwLWg
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWYwOWVkMjgwMDAxYjRkNmRlZSIsImlhdCI6MTcyODIyNTc3NiwiZXhwIjoxNzI4MjI2OTc2fQ.hnlaFqTa6fghXK-r04TvJ6H8S1CoGtOeiSjEWmFwLWg
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 202 Accepted
+Date: Sun, 06 Oct 2024 14:42:58 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=athWhVF8SwHw4NjUBKtitptZrikU%2BigMAtYeHD1klcvDnF4xgHOPOuL4ugojhOYJRbC9Urbqd1WhPcA3%2BD0nH9VBtX9%2FCoCVEGFFuNwo1Kf6FNP1ksnfX4LmgAWlsr0NFcafA5DQb3KXorleqdRhgrOmSz8%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ce66bcbefbe9e01-DME
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+HTTP/1.1 202 Accepted
+Date: Sun, 06 Oct 2024 14:42:58 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=athWhVF8SwHw4NjUBKtitptZrikU%2BigMAtYeHD1klcvDnF4xgHOPOuL4ugojhOYJRbC9Urbqd1WhPcA3%2BD0nH9VBtX9%2FCoCVEGFFuNwo1Kf6FNP1ksnfX4LmgAWlsr0NFcafA5DQb3KXorleqdRhgrOmSz8%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ce66bcbefbe9e01-DME
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+HTTP/1.1 202 Accepted
+Date: Sun, 06 Oct 2024 14:42:58 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=athWhVF8SwHw4NjUBKtitptZrikU%2BigMAtYeHD1klcvDnF4xgHOPOuL4ugojhOYJRbC9Urbqd1WhPcA3%2BD0nH9VBtX9%2FCoCVEGFFuNwo1Kf6FNP1ksnfX4LmgAWlsr0NFcafA5DQb3KXorleqdRhgrOmSz8%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ce66bcbefbe9e01-DME
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+]]></system-out>
+    <system-err><![CDATA[окт. 06, 2024 5:44:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 129, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 129
+]]></system-err>
+  </testcase>
+  <testcase name="transferToPersonalAccount" classname="AccountTest" time="6.459">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "VITMhmeFEp@yandex.ru",
+    "password": "RklooE",
+    "name": "KCjWzJ",
+    "accessToken": null,
+    "refreshToken": null
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "VITMhmeFEp@yandex.ru",
+    "password": "RklooE",
+    "name": "KCjWzJ",
+    "accessToken": null,
+    "refreshToken": null
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "VITMhmeFEp@yandex.ru",
+    "password": "RklooE",
+    "name": "KCjWzJ",
+    "accessToken": null,
+    "refreshToken": null
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "VITMhmeFEp@yandex.ru",
+    "password": "RklooE",
+    "name": "KCjWzJ",
+    "accessToken": null,
+    "refreshToken": null
+}
+HTTP/1.1 200 OK
+Date: Sun, 06 Oct 2024 14:43:02 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWY2OWVkMjgwMDAxYjRkNmRmMSIsImlhdCI6MTcyODIyNTc4MiwiZXhwIjoxNzI4MjI2OTgyfQ._zg4RX0fOFWKAOBezWtZ4_UngF6Q8q4KDkjGCxWjy9k
+ETag: W/"16d-UEDgZW2QaJZVtncHZKm0DuJH16k"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=PO5pcHofjY7Gm0O8enz2WTJcPcj2nspUrHJxR31fhNRT3mSDjNSKP4YfgPlN2tAx9LFF4TvwVCldwf98aw6ozGURaPe7Sd8mGTFfBXyeMrZv6LRDiARY0X1KNH7zbts%2Fn%2BF%2BWqpWJQNVv%2FL9yg65Q80GAjA%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ce66be0dfbfb06e-ATL
+Content-Encoding: gzip
+
+{
+    "success": true,
+    "user": {
+        "email": "vitmhmefep@yandex.ru",
+        "name": "KCjWzJ"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWY2OWVkMjgwMDAxYjRkNmRmMSIsImlhdCI6MTcyODIyNTc4MiwiZXhwIjoxNzI4MjI2OTgyfQ._zg4RX0fOFWKAOBezWtZ4_UngF6Q8q4KDkjGCxWjy9k",
+    "refreshToken": "d83234684d4c6393b236cb2d8ba449c0f3630f665116a228f03d9b040561917135009b1fc23b768a"
+}
+HTTP/1.1 200 OK
+Date: Sun, 06 Oct 2024 14:43:02 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWY2OWVkMjgwMDAxYjRkNmRmMSIsImlhdCI6MTcyODIyNTc4MiwiZXhwIjoxNzI4MjI2OTgyfQ._zg4RX0fOFWKAOBezWtZ4_UngF6Q8q4KDkjGCxWjy9k
+ETag: W/"16d-UEDgZW2QaJZVtncHZKm0DuJH16k"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=PO5pcHofjY7Gm0O8enz2WTJcPcj2nspUrHJxR31fhNRT3mSDjNSKP4YfgPlN2tAx9LFF4TvwVCldwf98aw6ozGURaPe7Sd8mGTFfBXyeMrZv6LRDiARY0X1KNH7zbts%2Fn%2BF%2BWqpWJQNVv%2FL9yg65Q80GAjA%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ce66be0dfbfb06e-ATL
+Content-Encoding: gzip
+
+{
+    "success": true,
+    "user": {
+        "email": "vitmhmefep@yandex.ru",
+        "name": "KCjWzJ"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWY2OWVkMjgwMDAxYjRkNmRmMSIsImlhdCI6MTcyODIyNTc4MiwiZXhwIjoxNzI4MjI2OTgyfQ._zg4RX0fOFWKAOBezWtZ4_UngF6Q8q4KDkjGCxWjy9k",
+    "refreshToken": "d83234684d4c6393b236cb2d8ba449c0f3630f665116a228f03d9b040561917135009b1fc23b768a"
+}
+HTTP/1.1 200 OK
+Date: Sun, 06 Oct 2024 14:43:02 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWY2OWVkMjgwMDAxYjRkNmRmMSIsImlhdCI6MTcyODIyNTc4MiwiZXhwIjoxNzI4MjI2OTgyfQ._zg4RX0fOFWKAOBezWtZ4_UngF6Q8q4KDkjGCxWjy9k
+ETag: W/"16d-UEDgZW2QaJZVtncHZKm0DuJH16k"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=PO5pcHofjY7Gm0O8enz2WTJcPcj2nspUrHJxR31fhNRT3mSDjNSKP4YfgPlN2tAx9LFF4TvwVCldwf98aw6ozGURaPe7Sd8mGTFfBXyeMrZv6LRDiARY0X1KNH7zbts%2Fn%2BF%2BWqpWJQNVv%2FL9yg65Q80GAjA%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ce66be0dfbfb06e-ATL
+Content-Encoding: gzip
+
+{
+    "success": true,
+    "user": {
+        "email": "vitmhmefep@yandex.ru",
+        "name": "KCjWzJ"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWY2OWVkMjgwMDAxYjRkNmRmMSIsImlhdCI6MTcyODIyNTc4MiwiZXhwIjoxNzI4MjI2OTgyfQ._zg4RX0fOFWKAOBezWtZ4_UngF6Q8q4KDkjGCxWjy9k",
+    "refreshToken": "d83234684d4c6393b236cb2d8ba449c0f3630f665116a228f03d9b040561917135009b1fc23b768a"
+}
+HTTP/1.1 200 OK
+Date: Sun, 06 Oct 2024 14:43:02 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWY2OWVkMjgwMDAxYjRkNmRmMSIsImlhdCI6MTcyODIyNTc4MiwiZXhwIjoxNzI4MjI2OTgyfQ._zg4RX0fOFWKAOBezWtZ4_UngF6Q8q4KDkjGCxWjy9k
+ETag: W/"16d-UEDgZW2QaJZVtncHZKm0DuJH16k"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=PO5pcHofjY7Gm0O8enz2WTJcPcj2nspUrHJxR31fhNRT3mSDjNSKP4YfgPlN2tAx9LFF4TvwVCldwf98aw6ozGURaPe7Sd8mGTFfBXyeMrZv6LRDiARY0X1KNH7zbts%2Fn%2BF%2BWqpWJQNVv%2FL9yg65Q80GAjA%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ce66be0dfbfb06e-ATL
+Content-Encoding: gzip
+
+{
+    "success": true,
+    "user": {
+        "email": "vitmhmefep@yandex.ru",
+        "name": "KCjWzJ"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWY2OWVkMjgwMDAxYjRkNmRmMSIsImlhdCI6MTcyODIyNTc4MiwiZXhwIjoxNzI4MjI2OTgyfQ._zg4RX0fOFWKAOBezWtZ4_UngF6Q8q4KDkjGCxWjy9k",
+    "refreshToken": "d83234684d4c6393b236cb2d8ba449c0f3630f665116a228f03d9b040561917135009b1fc23b768a"
+}
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWY2OWVkMjgwMDAxYjRkNmRmMSIsImlhdCI6MTcyODIyNTc4MiwiZXhwIjoxNzI4MjI2OTgyfQ._zg4RX0fOFWKAOBezWtZ4_UngF6Q8q4KDkjGCxWjy9k
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWY2OWVkMjgwMDAxYjRkNmRmMSIsImlhdCI6MTcyODIyNTc4MiwiZXhwIjoxNzI4MjI2OTgyfQ._zg4RX0fOFWKAOBezWtZ4_UngF6Q8q4KDkjGCxWjy9k
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWY2OWVkMjgwMDAxYjRkNmRmMSIsImlhdCI6MTcyODIyNTc4MiwiZXhwIjoxNzI4MjI2OTgyfQ._zg4RX0fOFWKAOBezWtZ4_UngF6Q8q4KDkjGCxWjy9k
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDJhMWY2OWVkMjgwMDAxYjRkNmRmMSIsImlhdCI6MTcyODIyNTc4MiwiZXhwIjoxNzI4MjI2OTgyfQ._zg4RX0fOFWKAOBezWtZ4_UngF6Q8q4KDkjGCxWjy9k
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 202 Accepted
+Date: Sun, 06 Oct 2024 14:43:05 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+cf-cache-status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=I9YI6%2FN294WY46RHkfWD9eNpgqsmLQmgqI7MBEN480he3EAokS5%2FI1MlbupSIpAtV9alTgtPZECto21RzL2hwa0YkfDVR6%2F4iLm5kxcpm0WqYqNc3%2BkVHYgHvcOt38QDc9emVJo8Dc7xpxqYvLXipeKvL9Y%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ce66bf24fecaac6-YYZ
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+HTTP/1.1 202 Accepted
+Date: Sun, 06 Oct 2024 14:43:05 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+cf-cache-status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=I9YI6%2FN294WY46RHkfWD9eNpgqsmLQmgqI7MBEN480he3EAokS5%2FI1MlbupSIpAtV9alTgtPZECto21RzL2hwa0YkfDVR6%2F4iLm5kxcpm0WqYqNc3%2BkVHYgHvcOt38QDc9emVJo8Dc7xpxqYvLXipeKvL9Y%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ce66bf24fecaac6-YYZ
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+HTTP/1.1 202 Accepted
+Date: Sun, 06 Oct 2024 14:43:05 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+cf-cache-status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=I9YI6%2FN294WY46RHkfWD9eNpgqsmLQmgqI7MBEN480he3EAokS5%2FI1MlbupSIpAtV9alTgtPZECto21RzL2hwa0YkfDVR6%2F4iLm5kxcpm0WqYqNc3%2BkVHYgHvcOt38QDc9emVJo8Dc7xpxqYvLXipeKvL9Y%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ce66bf24fecaac6-YYZ
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+HTTP/1.1 202 Accepted
+Date: Sun, 06 Oct 2024 14:43:05 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+cf-cache-status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=I9YI6%2FN294WY46RHkfWD9eNpgqsmLQmgqI7MBEN480he3EAokS5%2FI1MlbupSIpAtV9alTgtPZECto21RzL2hwa0YkfDVR6%2F4iLm5kxcpm0WqYqNc3%2BkVHYgHvcOt38QDc9emVJo8Dc7xpxqYvLXipeKvL9Y%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ce66bf24fecaac6-YYZ
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+]]></system-out>
+    <system-err><![CDATA[окт. 06, 2024 5:44:58 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 129, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 129
+]]></system-err>
+  </testcase>
+</testsuite>
